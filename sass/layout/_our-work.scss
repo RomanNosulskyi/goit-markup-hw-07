@@ -1,0 +1,36 @@
+.our-work {
+  padding-top: 0px;
+}
+.our-work__we-doing-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  justify-content: space-between;
+  margin: 0;
+}
+.item {
+  flex-direction: row;
+  text-align: center;
+}
+.our-work__descrip {
+  position: relative;
+}
+.our-work__wedoing-description {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-family: "Roboto", Sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}

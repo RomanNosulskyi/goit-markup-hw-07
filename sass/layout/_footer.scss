@@ -1,0 +1,94 @@
+.page-footer {
+  background-color: #2f303a;
+  padding-top: 48px;
+  padding-bottom: 28px;
+}
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+.page-footer__logo-web2 {
+  color: $primary-bg-color;
+}
+.page-footer__logo2 {
+  display: flex;
+  text-decoration: none;
+
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-bottom: 20px;
+}
+
+.page-footer__address-town {
+  color: $primary-bg-color;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+}
+.page-footer__address-mail,
+.page-footer__address-tel {
+  transition: color 250ms var(--timing-function);
+  color: $title-text-color;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+}
+.page-footer__link {
+  margin-bottom: 9px;
+  display: block;
+}
+.join-footer {
+  margin-right: 93px;
+}
+.join-footer__addition-list {
+  display: flex;
+}
+
+.addition {
+  margin-right: 640px;
+}
+.join-footer__add {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: $primary-bg-color;
+}
+.join-footer__addition-item {
+  margin-right: 10px;
+}
+.join-footer__addition-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #3f404a;
+
+  justify-content: center;
+  align-items: center;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: $accent-text-color;
+  }
+}
+.icon-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  fill: #ffffff;
+}

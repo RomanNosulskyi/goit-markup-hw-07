@@ -1,0 +1,130 @@
+header {
+  display: block;
+}
+.page-header {
+  align-items: center;
+  margin-bottom: 0px;
+
+  background-color: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+.page-heder__logo {
+  color: $secondary-text-color;
+  text-decoration: none;
+
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+
+  margin-right: 93px;
+  display: flex;
+}
+.logo-web {
+  color: $accent-text-color;
+}
+.active-page {
+  color: #2196f3;
+}
+.page-header__nav {
+  display: flex;
+  align-items: center;
+}
+.page-header__nav-studio {
+  display: flex;
+  align-items: center;
+}
+.page-header__link {
+  color: #2196f3;
+}
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.page-header__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $primary-text-color;
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+}
+
+.site-nav__item {
+  margin-left: 50px;
+}
+.page-header__active-page {
+  position: relative;
+}
+.page-header__active-page::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: $accent-text-color;
+  border-radius: 2px;
+  border-bottom-color: $accent-text-color;
+}
+.auth-nav__contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  align-self: center;
+}
+.icon-email {
+  width: 16px;
+  height: 12px;
+}
+.icon-phone {
+  height: 16px;
+}
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav__item {
+  margin-left: 50px;
+}
+.auth-nav__contact-info {
+  color: $title-text-color;
+  text-decoration: none;
+
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+}
+
+.address {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  margin-right: 70px;
+}
+.contact {
+  text-decoration: none;
+}
+.page-header__contact-info {
+  display: flex;
+  align-items: center;
+  transition: color 250ms $timing-function;
+}
