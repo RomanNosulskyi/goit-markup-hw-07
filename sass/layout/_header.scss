@@ -10,8 +10,12 @@ header {
   border-bottom-style: solid;
   border-bottom-color: #ececec;
 }
-.page-heder__logo {
-  color: $secondary-text-color;
+.page-header__nav {
+  display: flex;
+  align-items: center;
+}
+.page-header__logo {
+  color: $accent-text-color;
   text-decoration: none;
 
   font-family: Raleway, sans-serif;
@@ -19,17 +23,9 @@ header {
   line-height: 1.19;
 
   margin-right: 93px;
-  display: flex;
 }
-.logo-web {
-  color: $accent-text-color;
-}
-.active-page {
-  color: #2196f3;
-}
-.page-header__nav {
-  display: flex;
-  align-items: center;
+.page-header__logo-studio {
+  color: $secondary-text-color;
 }
 .page-header__nav-studio {
   display: flex;
@@ -40,7 +36,7 @@ header {
 }
 .site-nav {
   display: flex;
-  margin-left: 93px;
+  padding: 0;
 }
 .page-header__link {
   display: block;
@@ -59,27 +55,29 @@ header {
   }
 }
 
-.site-nav__item {
+.site-nav__item:not(:first-child) {
   margin-left: 50px;
 }
 .page-header__active-page {
   position: relative;
+  color: $accent-text-color;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: $accent-text-color;
+    border-radius: 2px;
+    border-bottom-color: $accent-text-color;
+  }
 }
-.page-header__active-page::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: $accent-text-color;
-  border-radius: 2px;
-  border-bottom-color: $accent-text-color;
-}
+
 .auth-nav__contacts-icon {
   margin-right: 10px;
   fill: currentColor;
-  align-self: center;
+  align-items: center;
 }
 .icon-email {
   width: 16px;
@@ -92,7 +90,7 @@ header {
   display: flex;
   margin-left: auto;
 }
-.auth-nav__item {
+.auth-nav__item:not(:first-child) {
   margin-left: 50px;
 }
 .auth-nav__contact-info {
