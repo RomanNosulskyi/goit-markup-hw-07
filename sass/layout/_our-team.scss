@@ -43,10 +43,17 @@
 .icon-member {
   fill: currentColor;
 }
-.workers > li {
-  background-color: var(--primary-bg-color);
+.our-team__team-item {
+  background-color: $primary-bg-color;
   border-radius: 4px;
   margin-left: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  border-radius: 0, 0, 4px, 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 0px;
 }
 
 .our-team__type-work {
@@ -57,21 +64,10 @@
   margin-top: 30px;
   margin-bottom: 10px;
 }
-li.team-item {
-  border-radius: 0, 0, 4px, 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  padding: 0px;
-  margin-left: 0px;
-}
 
 .team-item:not(:first-child) {
   padding: 0px;
   margin-left: 30px;
-}
-.team-item {
-  margin-bottom: 30px;
-  text-align: center;
 }
 p {
   color: $title-text-color;
@@ -80,6 +76,6 @@ p {
   line-height: 1.71;
 }
 
-.workers h3 {
+.our-team__name {
   font-weight: 500;
 }
